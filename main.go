@@ -28,16 +28,16 @@ func main() {
 	flag.Parse()
 
 	if out == "C" && isFlagPassed("F") {
-		celsius = conv.FarhenheitToCelsius(fahr)
+		celsius = conv.FahrenheitToCelsius(fahr)
 		fmt.Printf("%.2f°F er %.2f°C\n", fahr, celsius)
 	}
 	if out == "F" && isFlagPassed("C") {
-		fahr = conv.CelsiusToFarhenheit(celsius)
+		fahr = conv.CelsiusToFahrenheit(celsius)
 		fmt.Printf("%.2f°C er %.2f°F\n", celsius, fahr)
 	}
 
 	if out == "F" && isFlagPassed("K") {
-		fahr = conv.KelvinToFarhenheit(kelvin)
+		fahr = conv.KelvinToFahrenheit(kelvin)
 		fmt.Printf("%.2f°K er %.2f°F\n", kelvin, fahr)
 	}
 	if out == "C" && isFlagPassed("K") {
@@ -49,7 +49,7 @@ func main() {
 		fmt.Printf("%.2f°C er %.2f°K\n", celsius, kelvin)
 	}
 	if out == "K" && isFlagPassed("F") {
-		kelvin = conv.FarhenheitToKelvin(fahr)
+		kelvin = conv.FahrenheitToKelvin(fahr)
 		fmt.Printf("%.2f°F er %.2f°K\n", fahr, kelvin)
 	}
 }

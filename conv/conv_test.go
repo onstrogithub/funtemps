@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestFarhenheitToCelsius(t *testing.T) {
+func TestFahrenheitToCelsius(t *testing.T) {
 	type test struct {
 		input float64
 		want  float64
@@ -16,7 +16,7 @@ func TestFarhenheitToCelsius(t *testing.T) {
 	}
 
 	for _, tc := range tests {
-		got := FarhenheitToCelsius(tc.input)
+		got := FahrenheitToCelsius(tc.input)
 		if !reflect.DeepEqual(tc.want, got) {
 			t.Errorf("expected: %v, got: %v", tc.want, got)
 		}
@@ -58,7 +58,7 @@ func TestKelvinToCelsius(t *testing.T) {
 	}
 }
 
-func TestKelvinToFarhenheit(t *testing.T) {
+func TestKelvinToFahrenheit(t *testing.T) {
 	type test struct {
 		input float64
 		want  float64
@@ -69,13 +69,13 @@ func TestKelvinToFarhenheit(t *testing.T) {
 	}
 
 	for _, tc := range tests {
-		got := KelvinToFarhenheit(tc.input)
+		got := KelvinToFahrenheit(tc.input)
 		if !reflect.DeepEqual(tc.want, got) {
 			t.Errorf("expected: %v, got: %v", tc.want, got)
 		}
 	}
 }
-func TestFarhenheitToKelvin(t *testing.T) {
+func TestFahrenheitToKelvin(t *testing.T) {
 	type test struct {
 		input float64
 		want  float64
@@ -86,13 +86,13 @@ func TestFarhenheitToKelvin(t *testing.T) {
 	}
 
 	for _, tc := range tests {
-		got := FarhenheitToKelvin(tc.input)
+		got := FahrenheitToKelvin(tc.input)
 		if !reflect.DeepEqual(tc.want, got) {
 			t.Errorf("expected: %v, got: %v", tc.want, got)
 		}
 	}
 }
-func TestCelsiusToFarhenheit(t *testing.T) {
+func TestCelsiusToFahrenheit(t *testing.T) {
 	type test struct {
 		input float64
 		want  float64
@@ -103,7 +103,7 @@ func TestCelsiusToFarhenheit(t *testing.T) {
 	}
 
 	for _, tc := range tests {
-		got := CelsiusToFarhenheit(tc.input)
+		got := CelsiusToFahrenheit(tc.input)
 		if !reflect.DeepEqual(tc.want, got) {
 			t.Errorf("expected: %v, got: %v", tc.want, got)
 		}
